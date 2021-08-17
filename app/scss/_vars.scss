@@ -1,0 +1,61 @@
+$default: #4E4D56;
+$accent: #FE7244;
+$title-color: #3D3D3D;
+$button: #6347EB;
+$liteGreen: #79E28A;
+$liteOrange:#F99462;
+$liteBlue:#47C2FF;
+
+
+@mixin r($width) {
+  @media only screen and (max-width: $width + "px") {
+    @content;
+  }
+}
+
+@mixin opensans($weight) {
+  font-family: 'OpenSans', sans-serif;
+  font-weight: $weight;
+}
+
+@mixin montserratAlternates($weight) {
+  font-family: 'MontserratAlternates', sans-serif;
+  font-weight: $weight;
+}
+
+@mixin montserrat($weight) {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: $weight;
+}
+
+@mixin nunito($weight) {
+  font-family: 'Nunito', sans-serif;
+  font-weight: $weight;
+}
+
+@mixin text-clamp($lines: 2, $line-height: false) {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines;
+
+  @if $line-height {
+    max-height: $line-height * $lines * 1px;
+  }
+}
+
+@mixin checkbox-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
+@function max ($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+
+@function min ($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
