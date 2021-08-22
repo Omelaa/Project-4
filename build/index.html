@@ -4,46 +4,43 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Name</title>
-  <link rel="shortcut icon" href="images/content/icons/" type="images/content/icons/">
+  <title>SkillCare</title>
+  <link rel="shortcut icon" href="images/content/header/favicon.svg" type="images/content/header/favicon.svg">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
-
-  <header class="header">
+<body id="body">
+  <main>
+      <header class="header">
     <div class="container">
       <div class="header__inner">
-        <a class="header__logo logo" href="#">
-          <svg viewBox="0 0 15.28 15.281" width="150" height="140">
-            <use xlink:href="images/sprite.svg#logo"></use>
-          </svg>
-          <span class="sr-only">Logotype</span>
+        <a class="header__logo logo" href="#body">
+          <img src="images/content/header/Logo.webp" alt="logotype">
         </a>
         <nav class="menu">
           <ul class="menu__items">
             <li class="menu__item">
-              <a class="menu__link" href="#">
+              <a class="menu__link" href="#body">
                 Home
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">
+              <a class="menu__link" href="#categories">
                 Course
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">
+              <a class="menu__link" href="#about">
                 About
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">
+              <a class="menu__link" href="#instructor">
                 Instructor
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">
+              <a class="menu__link" href="#skill">
                 Login
               </a>
             </li>
@@ -52,11 +49,13 @@
         <a class="header__btn button" href="#">
           Sign Up
         </a>
+        <button class="header__burger" type="button">
+          <span></span>
+          <span class="sr-only">I'm menu burger</span>
+        </button>
       </div>
-    </div>
   </header>
-
-  <div class="header-offer">
+      <section class="header-offer">
     <div class="container">
       <div class="header-offer__inner">
         <div class="header-offer__wrapper">
@@ -74,136 +73,606 @@
             <a class="header-offer__btn button" href="#">
               Join for Free
             </a>
-            <a class="header-offer__play" href="#">
+            <a class="header-offer__play" href="https://www.youtube.com/watch?v=GB37DyAQazw" data-fancybox>
+              <div class="header-offer__play-button play-button">
+                <svg viewBox="0 0 15.28 15.281" width="30" height="30" fill="#FE7244">
+                  <use xlink:href="images/sprite.svg#play"></use>
+                </svg>
+                <span class="sr-only">play button</span>
+              </div>
               Play Now
             </a>
           </div>
         </div>
         <div class="header-offer__girl">
-          <img class="header-offer__img ibg" src="images/content/header/girl.png" alt="girl">
+          <img class="header-offer__img ibg" src="images/content/header/girl.webp" alt="girl">
+        </div>
+      </div>
+    </div>
+  </section>
+      <section class="info" id="about">
+    <div class="container">
+      <div class="about">
+        <ul class="about__items">
+          <li class="about__item about__item--vector">
+            10000+ Online Course
+          </li>
+          <li class="about__item about__item--head">
+            Expert Instruction
+          </li>
+          <li class="about__item about__item--infinity">
+            Lifetime access
+          </li>
+        </ul>
+      </div>
+      <div class="info-slider">
+        <h2 class="info-slider__title title">
+          Trusted by 500+ leading universities and companies
+        </h2>
+        <ul class="info-slider__items swiper-container">
+          <div class="info-slider__wrapper swiper-wrapper">
+            <li class="info-slider-item swiper-slide">
+              <img class="info-slider__img ibg" src="images/content/info-slider/1.webp" alt="partner">
+            </li>
+            <li class="info-slider-item swiper-slide">
+              <img class="info-slider__img ibg" src="images/content/info-slider/2.webp" alt="partner">
+            </li>
+            <li class="info-slider-item swiper-slide">
+              <img class="info-slider__img ibg" src="images/content/info-slider/3.webp" alt="partner">
+            </li>
+            <li class="info-slider-item swiper-slide">
+              <img class="info-slider__img ibg" src="images/content/info-slider/4.webp" alt="partner">
+            </li>
+            <li class="info-slider-item swiper-slide">
+              <img class="info-slider__img ibg" src="images/content/info-slider/5.webp" alt="partner">
+            </li>
+            <li class="info-slider-item swiper-slide">
+              <img class="info-slider__img ibg" src="images/content/info-slider/6.webp" alt="partner">
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </section>
+     <section class="categories" id="categories">
+   <div class="container container--sm">
+     <h2 class="categories__title title">
+       Browse online Course Categories
+     </h2>
+     <ul class="categories__items">
+       <li class="categories__item categories__item--ux">
+         <a class="catigories__link" href="#">
+           <div class="categories__name categories__name--ux">
+             UI UX Design
+           </div>
+           <div class="categories__icon categories__icon--ux">
+             <svg viewBox="0 0 15.28 15.281" width="48" height="48" fill="#ffffff">
+               <use xlink:href="images/sprite.svg#1"></use>
+             </svg>
+             <span class="sr-only">ux design</span>
+           </div>
+         </a>
+       </li>
+       <li class="categories__item categories__item--web">
+         <a class="catigories__link" href="#">
+           <div class="categories__name categories__name--web">
+             Web development
+           </div>
+           <div class="categories__icon categories__icon--web">
+             <svg viewBox="0 0 15.28 15.281" width="48" height="48" fill="#ffffff">
+               <use xlink:href="images/sprite.svg#2"></use>
+             </svg>
+             <span class="sr-only">ux design</span>
+           </div>
+         </a>
+       </li>
+       <li class="categories__item categories__item--design">
+         <a class="catigories__link" href="#">
+           <div class="categories__name categories__name--design">
+             Graphic Design
+           </div>
+           <div class="categories__icon categories__icon--design">
+             <svg viewBox="0 0 15.28 15.281" width="48" height="48" fill="#ffffff">
+               <use xlink:href="images/sprite.svg#3"></use>
+             </svg>
+             <span class="sr-only">ux design</span>
+           </div>
+         </a>
+       </li>
+       <li class="categories__item categories__item--data">
+         <a class="catigories__link" href="#">
+           <div class="categories__name categories__name--data">
+             Data Science
+           </div>
+           <div class="categories__icon categories__icon--data">
+             <svg viewBox="0 0 15.28 15.281" width="48" height="48" fill="#ffffff">
+               <use xlink:href="images/sprite.svg#4"></use>
+             </svg>
+             <span class="sr-only">ux design</span>
+           </div>
+         </a>
+       </li>
+       <li class="categories__item categories__item--digital">
+         <a class="catigories__link" href="#">
+           <div class="categories__name categories__name--digital">
+             Digital marketing
+           </div>
+           <div class="categories__icon categories__icon--digital">
+             <svg viewBox="0 0 15.28 15.281" width="48" height="48" fill="#ffffff">
+               <use xlink:href="images/sprite.svg#5"></use>
+             </svg>
+             <span class="sr-only">ux design</span>
+           </div>
+         </a>
+       </li>
+     </ul>
+   </div>
+ </section>
+     <section class="courses">
+   <div class="container container--sm">
+     <h2 class="courses__title title">
+       Explore most popular courses
+     </h2>
+     <div class="courses-filter ">
+       <ul class="courses-filter__list ">
+         <li class="courses-filter__item ">
+           <button class="courses-filter__button" type="button" data-filter="all">
+             Programing
+           </button>
+         </li>
+         <li class="courses-filter__item">
+           <button class="courses-filter__button" type="button" data-filter=".design">
+             Design
+           </button>
+         </li>
+         <li class="courses-filter__item">
+           <button class="courses-filter__button" type="button" data-filter=".business">
+             Business
+           </button>
+         </li>
+         <li class="courses-filter__item">
+           <button class="courses-filter__button" type="button" data-filter=".lifestyle">
+             Lifestyle
+           </button>
+         </li>
+         <li class="courses-filter__item">
+           <button class="courses-filter__button" type="button" data-filter=".health">
+             Health & Fitness
+           </button>
+         </li>
+         <li class="courses-filter__item">
+           <button class="courses-filter__button" type="button" data-filter=".marketing">
+             Marketing
+           </button>
+         </li>
+         <li class="courses-filter__item">
+           <button class="courses-filter__button" type="button" data-filter=".music">
+             Music
+           </button>
+         </li>
+         <li class="courses-filter__item">
+           <button class="courses-filter__button" type="button" data-filter=".finance">
+             Finance & Accounting
+           </button>
+         </li>
+       </ul>
+     </div>
+     <div class="courses-gallery">
+       <ul class="courses-gallery__items">
+         <li class="courses-gallery__item mix design">
+           <a class="courses-gallery__img" href="#">
+             <img src="images/content/gallery/1-bg.webp" alt="background">
+           </a>
+           <div class="courses-gallery__inner">
+             <div class="courses-gallery__wrapper">
+               <a class="courses-gallery__man" href="#">
+                 <img class="courses-gallery__face" src="images/content/gallery/1.webp" alt="Alex Maxwell">
+                 <div class="courses-gallery__name">
+                   Alex Maxwell
+                 </div>
+               </a>
+               <a class="courses-gallery__lable courses-gallery__lable--web" href="#">
+                 Web Design
+               </a>
+             </div>
+             <a class="courses-gallery__title title" href="#">
+               Web Design and Development
+               Crash course 2022
+             </a>
+             <div class="courses-gallery__wrapper">
+               <div class="courses-gallery__time">
+                 16 hr 30 mins
+               </div>
+               <div class="courses-gallery__seller">
+                 Best Seller
+               </div>
+             </div>
+             <div class="courses-gallery__wrapper">
+               <div class="courses-gallery__price">
+                 $120
+                 <span>$180</span>
+               </div>
+               <div class="courses-gallery__rate rate" data-rateyo-rating="5">
+                 <div class="sr-only">star rating</div>
+               </div>
+             </div>
+           </div>
+         </li>
+         <li class="courses-gallery__item mix business design lifestyle finance health">
+           <a class="courses-gallery__img" href="#">
+             <img src="images/content/gallery/2-bg.webp" alt="background">
+           </a>
+           <div class="courses-gallery__inner">
+             <div class="courses-gallery__wrapper">
+               <a class="courses-gallery__man" href="#">
+                 <img class="courses-gallery__face" src="images/content/gallery/2.webp" alt="Alex Maxwell">
+                 <div class="courses-gallery__name">
+                   Cristian Doru Barin
+                 </div>
+               </a>
+               <a class="courses-gallery__lable courses-gallery__lable--machine" href="#">
+                 Machine
+               </a>
+             </div>
+             <a class="courses-gallery__title title" href="#">
+               Machine Learning, Data Science and Deep Learning
+             </a>
+             <div class="courses-gallery__wrapper">
+               <div class="courses-gallery__time">
+                 20 hr 30 mins
+               </div>
+               <div class="courses-gallery__seller">
+                 Best Seller
+               </div>
+             </div>
+             <div class="courses-gallery__wrapper">
+               <div class="courses-gallery__price">
+                 $150
+                 <span>$200</span>
+               </div>
+               <div class="courses-gallery__rate rate" data-rateyo-rating="5">
+                 <div class="sr-only">star rating</div>
+               </div>
+             </div>
+           </div>
+         </li>
+         <li class="courses-gallery__item mix business health">
+           <a class="courses-gallery__img" href="#">
+             <img src="images/content/gallery/3-bg.webp" alt="background">
+           </a>
+           <div class="courses-gallery__inner">
+             <div class="courses-gallery__wrapper">
+               <a class="courses-gallery__man" href="#">
+                 <img class="courses-gallery__face" src="images/content/gallery/3.webp" alt="Alex Maxwell">
+                 <div class="courses-gallery__name">
+                   Jose Portilla
+                 </div>
+               </a>
+               <a class="courses-gallery__lable courses-gallery__lable--data" href="#">
+                 Data Science
+               </a>
+             </div>
+             <a class="courses-gallery__title title" href="#">
+               Python for Data Science and Machine Learning Bootcamp
+             </a>
+             <div class="courses-gallery__wrapper">
+               <div class="courses-gallery__time">
+                 36 hr 30 mins
+               </div>
+               <div class="courses-gallery__seller">
+                 Best Seller
+               </div>
+             </div>
+             <div class="courses-gallery__wrapper">
+               <div class="courses-gallery__price">
+                 $250
+                 <span>$300</span>
+               </div>
+               <div class=" courses-gallery__rate courses-gallery__rate--four rate" data-rateyo-rating="4">
+                 <div class="sr-only">star rating</div>
+               </div>
+             </div>
+           </div>
+         </li>
+         <li class="courses-gallery__item mix lifestyle design music marketing">
+           <a class="courses-gallery__img" href="#">
+             <img src="images/content/gallery/4-bg.webp" alt="background">
+           </a>
+           <div class="courses-gallery__inner">
+             <div class="courses-gallery__wrapper">
+               <a class="courses-gallery__man" href="#">
+                 <img class="courses-gallery__face" src="images/content/gallery/4.webp" alt="Alex Maxwell">
+                 <div class="courses-gallery__name">
+                   Alex Smith
+                 </div>
+               </a>
+               <a class="courses-gallery__lable courses-gallery__lable--data" href="#">
+                 Data Science
+               </a>
+             </div>
+             <a class="courses-gallery__title title" href="#">
+               The Data Science Course 2021: Complete Data Science
+             </a>
+             <div class="courses-gallery__wrapper">
+               <div class="courses-gallery__time">
+                 14 hr 30 mins
+               </div>
+               <div class="courses-gallery__seller">
+                 Best Seller
+               </div>
+             </div>
+             <div class="courses-gallery__wrapper">
+               <div class="courses-gallery__price">
+                 $120
+                 <span>$180</span>
+               </div>
+               <div class="courses-gallery__rate rate" data-rateyo-rating="5">
+                 <div class="sr-only">star rating</div>
+               </div>
+             </div>
+           </div>
+         </li>
+         <li class="courses-gallery__item mix design music marketing health">
+           <a class="courses-gallery__img" href="#">
+             <img src="images/content/gallery/5-bg.webp" alt="background">
+           </a>
+           <div class="courses-gallery__inner">
+             <div class="courses-gallery__wrapper">
+               <a class="courses-gallery__man" href="#">
+                 <img class="courses-gallery__face" src="images/content/gallery/5.webp" alt="Alex Maxwell">
+                 <div class="courses-gallery__name">
+                   Barin daniel
+                 </div>
+               </a>
+               <a class="courses-gallery__lable courses-gallery__lable--mobile" href="#">
+                 Mobile App
+               </a>
+             </div>
+             <a class="courses-gallery__title title" href="#">
+               Ultimate Adobe Photoshop Training: From Beginner to Pro
+             </a>
+             <div class="courses-gallery__wrapper">
+               <div class="courses-gallery__time">
+                 20 hr 30 mins
+               </div>
+               <div class="courses-gallery__seller">
+                 Best Seller
+               </div>
+             </div>
+             <div class="courses-gallery__wrapper">
+               <div class="courses-gallery__price">
+                 $150
+                 <span>$200</span>
+               </div>
+               <div class="courses-gallery__rate rate" data-rateyo-rating="5">
+                 <div class="sr-only">star rating</div>
+               </div>
+             </div>
+           </div>
+         </li>
+         <li class="courses-gallery__item mix design business design lifestyle finance music">
+           <a class="courses-gallery__img" href="#">
+             <img src="images/content/gallery/6-bg.webp" alt="background">
+           </a>
+           <div class="courses-gallery__inner">
+             <div class="courses-gallery__wrapper">
+               <a class="courses-gallery__man" href="#">
+                 <img class="courses-gallery__face" src="images/content/gallery/6.webp" alt="Alex Maxwell">
+                 <div class="courses-gallery__name">
+                   Jonathan mask
+                 </div>
+               </a>
+               <a class="courses-gallery__lable courses-gallery__lable--game" href="#">
+                 Game
+               </a>
+             </div>
+             <a class="courses-gallery__title title" href="#">
+               The Ultimate Guide to Game Development with Unity 2022
+             </a>
+             <div class="courses-gallery__wrapper">
+               <div class="courses-gallery__time">
+                 36 hr 30 mins
+               </div>
+               <div class="courses-gallery__seller">
+                 Best Seller
+               </div>
+             </div>
+             <div class="courses-gallery__wrapper">
+               <div class="courses-gallery__price">
+                 $180
+                 <span>$200</span>
+               </div>
+               <div class="courses-gallery__rate rate" data-rateyo-rating="4">
+                 <div class="sr-only">star rating</div>
+               </div>
+             </div>
+           </div>
+         </li>
+       </ul>
+     </div>
+     <div class="courses-gallery__btn">
+       <a class="courses-gallery__button button" href="#">
+         View all course
+       </a>
+     </div>
+   </div>
+ </section>
+      <section class="skill">
+    <div class="container">
+      <div class="skill__inner">
+        <div class="skill__wrapper">
+          <h2 class="skill__title title">
+            Benefits Of Learning
+            From <span>SkillCare</span>
+          </h2>
+          <div class="skill__subtitle">
+            <p>
+              Watch on-demand video lectures from renowned instructors in subjects such as Proggraming, business,
+              computer science,
+              data science, and language learning.
+            </p>
+          </div>
+          <div class="skill__btns">
+            <a class="skill__button button" href="#">
+              Start learning
+            </a>
+            <a class="skill__btn" href="#">
+              Read more
+            </a>
+          </div>
+        </div>
+        <a class="skill__video ibg" style="background-image: url(images/content/skill/bg.webp)"
+          href="https://www.youtube.com/watch?v=GB37DyAQazw" data-fancybox id="skill">
+          <div class="skill__play-button play-button">
+            <svg viewBox="0 0 15.28 15.281" width="30" height="30" fill="#FE7244">
+              <use xlink:href="images/sprite.svg#play"></use>
+            </svg>
+            <span class="sr-only">play button</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+    <footer class="footer">
+  <h2 class="sr-only">Footer</h2>
+  <div class="container">
+    <div class="footer__inner">
+      <ul class="footer__items">
+        <li class="footer__item">
+          <ul class="footer__list">
+            <li class="footer__title">
+              Services
+            </li>
+            <li class="footer__link">
+              <a href="#">
+                Online Instructor
+              </a>
+            </li>
+            <li class="footer__link">
+              <a href="#">
+                Premium E Course
+              </a>
+            </li>
+            <li class="footer__link">
+              <a href="#">
+                E Books
+              </a>
+            </li>
+            <li class="footer__link">
+              <a href="#">
+                Our Blogs
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer__item">
+          <ul class="footer__list">
+            <li class="footer__title">
+              Information
+            </li>
+            <li class="footer__link">
+              <a href="#">
+                Join Us
+              </a>
+            </li>
+            <li class="footer__link">
+              <a href="#">
+                Get Promo
+              </a>
+            </li>
+            <li class="footer__link">
+              <a href="#">
+                Premium Feature
+              </a>
+            </li>
+            <li class="footer__link">
+              <a href="#">
+                Schedule
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer__item">
+          <ul class="footer__list">
+            <li class="footer__title">
+              Company
+            </li>
+            <li class="footer__link">
+              <a href="#">
+                Patnership
+              </a>
+            </li>
+            <li class="footer__link">
+              <a href="#">
+                Terms of Use
+              </a>
+            </li>
+            <li class="footer__link">
+              <a href="#">
+                About
+              </a>
+            </li>
+            <li class="footer__link">
+              <a href="#">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer__item">
+          <ul class="footer__list">
+            <li class="footer__title">
+              Get in Touch
+            </li>
+            <li class="footer__text">
+              <p>
+                Follow us on social media and stay updated with the latest information about our services
+              </p>
+            </li>
+            <li class="footer__socials">
+              <a class="footer__social" href="#">
+                <svg viewBox="0 0 15.28 15.281" width="20" height="20" fill="#6652DA">
+                  <use xlink:href="images/sprite.svg#facebook"></use>
+                </svg>
+                <span class="sr-only">facebook</span>
+              </a>
+              <a class="footer__social" href="#">
+                <svg viewBox="0 0 15.28 15.281" width="20" height="20" fill="#6652DA">
+                  <use xlink:href="images/sprite.svg#twitter"></use>
+                </svg>
+                <span class="sr-only">twitter</span>
+              </a>
+              <a class="footer__social" href="#">
+                <svg viewBox="0 0 15.28 15.281" width="20" height="20" fill="#6652DA">
+                  <use xlink:href="images/sprite.svg#instagram"></use>
+                </svg>
+                <span class="sr-only">instagram</span>
+              </a>
+              <a class="footer__social" href="#">
+                <svg viewBox="0 0 15.28 15.281" width="20" height="20" fill="#6652DA">
+                  <use xlink:href="images/sprite.svg#pinterset"></use>
+                </svg>
+                <span class="sr-only">pinterset</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom__inner">
+        <a class="footer-bottom__logo logo" href="#body">
+          <img src="images/content/header/Logo.webp" alt="logotype">
+        </a>
+        <div class="footer-bottom__desc">
+          © Skillcare 2021 all rights reserved
         </div>
       </div>
     </div>
   </div>
-  <main>
-    <section class="info">
-      <div class="container">
-        <div class="about">
-          <ul class="about__items">
-            <li class="about__item about__item--vector">
-              10000+ Online Course
-            </li>
-            <li class="about__item about__item--head">
-              Expert Instruction
-            </li>
-            <li class="about__item about__item--infinity">
-              Lifetime access
-            </li>
-          </ul>
-        </div>
-        <div class="info-slider">
-          <h2 class="info-slider__title title">
-            Trusted by 500+ leading universities and companies
-          </h2>
-          <ul class="info-slider__items swiper-container">
-            <span class="info-slider__wrapper swiper-wrapper">
-              <li class="info-slider-item swiper-slide">
-                <img class="info-slider__img ibg" src="images/content/info-slider/1.png" alt="partner">
-              </li>
-              <li class="info-slider-item swiper-slide">
-                <img class="info-slider__img ibg" src="images/content/info-slider/2.png" alt="partner">
-              </li>
-              <li class="info-slider-item swiper-slide">
-                <img class="info-slider__img ibg" src="images/content/info-slider/3.png" alt="partner">
-              </li>
-              <li class="info-slider-item swiper-slide">
-                <img class="info-slider__img ibg" src="images/content/info-slider/4.png" alt="partner">
-              </li>
-              <li class="info-slider-item swiper-slide">
-                <img class="info-slider__img ibg" src="images/content/info-slider/5.png" alt="partner">
-              </li>
-              <li class="info-slider-item swiper-slide">
-                <img class="info-slider__img ibg" src="images/content/info-slider/6.png" alt="partner">
-              </li>
-            </span>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="categories">
-      <div class="container container--sm">
-        <h2 class="categories__title title">
-          Browse online Course Categories
-        </h2>
-        <ul class="categories__items">
-          <li class="categories__item categories__item--ux">
-            <a class="catigories__link" href="#">
-              <div class="categories__name categories__name--ux">
-                UI UX Design
-              </div>
-              <div class="categories__icon categories__icon--ux">
-                <svg viewBox="0 0 15.28 15.281" width="48" height="48" fill="#ffffff">
-                  <use xlink:href="images/sprite.svg#1"></use>
-                </svg>
-                <span class="sr-only">ux design</span>
-              </div>
-            </a>
-          </li>
-          <li class="categories__item categories__item--web">
-            <a class="catigories__link" href="#">
-              <div class="categories__name categories__name--web">
-                Web development
-              </div>
-              <div class="categories__icon categories__icon--web">
-                <svg viewBox="0 0 15.28 15.281" width="48" height="48" fill="#ffffff">
-                  <use xlink:href="images/sprite.svg#2"></use>
-                </svg>
-                <span class="sr-only">ux design</span>
-              </div>
-            </a>
-          </li>
-          <li class="categories__item categories__item--design">
-            <a class="catigories__link" href="#">
-              <div class="categories__name categories__name--design">
-                Graphic Design
-              </div>
-              <div class="categories__icon categories__icon--design">
-                <svg viewBox="0 0 15.28 15.281" width="48" height="48" fill="#ffffff">
-                  <use xlink:href="images/sprite.svg#3"></use>
-                </svg>
-                <span class="sr-only">ux design</span>
-              </div>
-            </a>
-          </li>
-          <li class="categories__item categories__item--data">
-            <a class="catigories__link" href="#">
-              <div class="categories__name categories__name--data">
-                Data Science
-              </div>
-              <div class="categories__icon categories__icon--data">
-                <svg viewBox="0 0 15.28 15.281" width="48" height="48" fill="#ffffff">
-                  <use xlink:href="images/sprite.svg#4"></use>
-                </svg>
-                <span class="sr-only">ux design</span>
-              </div>
-            </a>
-          </li>
-          <li class="categories__item categories__item--digital">
-            <a class="catigories__link" href="#">
-              <div class="categories__name categories__name--digital">
-                Digital marketing
-              </div>
-              <div class="categories__icon categories__icon--digital">
-                <svg viewBox="0 0 15.28 15.281" width="48" height="48" fill="#ffffff">
-                  <use xlink:href="images/sprite.svg#5"></use>
-                </svg>
-                <span class="sr-only">ux design</span>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
+</footer>
   </main>
 </body>
 <script src="js/main.min.js"></script>
